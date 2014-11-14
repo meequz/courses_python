@@ -27,9 +27,9 @@ def simple_wrap(text, max_len):
         last_n = len(res) - res[::-1].find('\n')
         
         if len(res[last_n:]) + len(word) + 1 > max_len:
-            res += '\n' + word + ' '
-        else:
-            res += word + ' '
+            res += '\n'
+        
+        res += word + ' '
     
     return res[1:]
     
